@@ -11,22 +11,22 @@
 
 @font-face {
     font-family: 'Heavitas';
-    src: url(../assets/font/Heavitas.ttf) format('truetype');
+    src: url(../assets/fonts/Heavitas.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'LouisGeorgeCafe_normal';
-    src: url(../assets/font/louis_george_cafe/Louis\ George\ Cafe.ttf) format('truetype');
+    src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'LouisGeorgeCafe_bold';
-    src: url(../assets/font/louis_george_cafe/Louis\ George\ Cafe\ Bold.ttf) format('truetype');
+    src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe\ Bold.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'LouisGeorgeCafe_light';
-    src: url(../assets/font/louis_george_cafe/Louis\ George\ Cafe\ Light.ttf) format('truetype');
+    src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe\ Light.ttf) format('truetype');
 }
 
 h1, .h1{ 
