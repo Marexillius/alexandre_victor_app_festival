@@ -1,3 +1,7 @@
-# Projet 1 de Optimization Web
+# Nom du festival choisi: *ARTECHOUSE*
 
-### Production d'une Landing Page et d'un application basser sur le site d'*ARTECHOUSE*
+## [Optimisation Web - Projet app d'un festival d'art numérique](https://tim-montmorency.com/timdoc/582-424MO/projet-app-festival-art-numerique/)
+
+### Équipe :
+* Victor Gileau
+* Alexandre Gervais
