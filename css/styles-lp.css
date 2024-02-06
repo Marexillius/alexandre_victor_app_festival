@@ -63,6 +63,7 @@ body {
 
 .navbar {
     background-color: var(--noir);
+    color: var(--blanc);
 }
 
 /*---------------------------------------------------------- 
