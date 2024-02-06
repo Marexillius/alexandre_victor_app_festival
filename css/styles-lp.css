@@ -29,11 +29,13 @@
     src: url(../assets/fonts/Louis\ George\ Cafe\ Light.ttf) format('truetype');
 }
 
-h1, .h1{ 
+h1, .h1 {
+    font-family: 'Heavitas';
     font-size: 50px; font-weight: 900; color: var(--blanc);
 }
 
 h2, .h2{
+    font-family: 'Heavitas';
     font-size: 36px; font-weight: 700; color: var(--blanc);
 }
 
@@ -53,10 +55,17 @@ h6, .h6{
     font-size: 5px; font-weight: 300; color: var(--blanc);
 }
 
+p {
+    font-family: 'LouisGeorgeCafe_bold';
+}
+
 body {
     background-color: var(--bleufoncer);
 }
 
+.separateur {
+    height: 5em;
+}
 /*---------------------------------------------------------- 
 # Section Navbar 
 ----------------------------------------------------------*/ 
@@ -69,3 +78,31 @@ body {
 /*---------------------------------------------------------- 
 # Section Hero  
 ----------------------------------------------------------*/ 
+
+.hero {
+    background-color: var(--bleufoncer);
+    height: 100vh;
+    color: var(--blanc);
+}
+
+.info-app {
+    background-color: var(--orangejaune);
+    padding: 2em;
+    border-radius: 25px;
+}
+
+.hero h1 {
+    color: var(--blanc);
+}
+
+.hero hr {
+    border-radius: 25px;
+    border: 5px solid var(--blanc);
+}
+
+.hero em {
+    font-style: normal;
+    font-family: 'Heavitas';
+    font-size: 60px;
+    letter-spacing: 10px;
+}
