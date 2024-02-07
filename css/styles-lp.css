@@ -2,6 +2,7 @@
 # Styles Généraux 
 ---------------------------------------------------------*/
 :root {
+    --alpha: rgba(0, 0, 0, 0);
     --noir: #000000;
     --bleufoncer: #14213D;
     --orangejaune: #FCA311;
@@ -57,15 +58,13 @@ h6, .h6{
 
 p {
     font-family: 'LouisGeorgeCafe_bold';
+    font-size: 22px;
 }
 
 body {
     background-color: var(--bleufoncer);
 }
 
-.separateur {
-    height: 5em;
-}
 /*---------------------------------------------------------- 
 # Section Navbar 
 ----------------------------------------------------------*/ 
@@ -75,12 +74,22 @@ body {
     color: var(--blanc);
 }
 
+.barre-color-navbar {
+    height: 5em;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--alpha), var(--orangejaune), var(--alpha));
+}
+
 /*---------------------------------------------------------- 
 # Section Hero  
 ----------------------------------------------------------*/ 
 
-.hero {
+.back-hero {
     background-color: var(--bleufoncer);
+    height: 100vh;
+}
+
+.hero {
     height: 100vh;
     color: var(--blanc);
 }
@@ -92,10 +101,11 @@ body {
 .info-app {
     background-color: var(--orangejaune);
     border-radius: 25px;
-    height: 600px;
+    max-height: 600px;
 }
 
 .app {
+    border: 5px solid var(--blanc);
     background-color: var(--orangejaune);
     border-radius: 25px;
     min-height: 600px;
@@ -114,6 +124,11 @@ body {
 .hero em {
     font-style: normal;
     font-family: 'Heavitas';
-    font-size: 60px;
-    letter-spacing: 10px;
+    font-size: 3.8em;
+    letter-spacing: 15px;
+}
+
+.btn {
+    height: 70px;
+    width: 75%;
 }
