@@ -85,10 +85,20 @@ body {
     color: var(--blanc);
 }
 
+.hero .row {
+    height: 100%;
+}
+
 .info-app {
     background-color: var(--orangejaune);
-    padding: 2em;
     border-radius: 25px;
+    height: 600px;
+}
+
+.app {
+    background-color: var(--orangejaune);
+    border-radius: 25px;
+    min-height: 600px;
 }
 
 .hero h1 {
@@ -96,6 +106,7 @@ body {
 }
 
 .hero hr {
+    width: 100%;
     border-radius: 25px;
     border: 5px solid var(--blanc);
 }
