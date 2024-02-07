@@ -86,7 +86,12 @@ body {
 
 .back-hero {
     background-color: var(--bleufoncer);
-    height: 100vh;
+    background-image: url(../assets/artworks/world_of_ai-magination.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-blend-mode: luminosity;
+    min-height: 100vh;
 }
 
 .hero {
@@ -131,4 +136,34 @@ body {
 .btn {
     height: 70px;
     width: 75%;
+}
+
+/*---------------------------------------------------------- 
+# Section Footer 
+----------------------------------------------------------*/
+
+footer {
+    max-height: 15rem;
+    background-color: var(--noir);
+}
+
+.barre-color-footer {
+    bottom: 0;
+    height: 0.5em;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--alpha), var(--orangejaune), var(--alpha));
+}
+
+p.lien-git {
+    color: var(--blanc);
+    font-family: 'LouisGeorgeCafe_bold';
+    font-size: 16px;
+}
+
+footer .container-fluid .row div:nth-child(3) a {
+    color: var(--blanc);
+    font-family: 'LouisGeorgeCafe_bold';
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: none;
 }
