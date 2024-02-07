@@ -80,6 +80,10 @@ body {
     background-image: linear-gradient(to right, var(--alpha), var(--orangejaune), var(--alpha));
 }
 
+.nav-link {
+    font-family: 'LouisGeorgeCafe_bold';
+}
+
 /*---------------------------------------------------------- 
 # Section Hero  
 ----------------------------------------------------------*/ 
