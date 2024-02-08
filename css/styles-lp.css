@@ -84,10 +84,15 @@ body {
     font-family: 'LouisGeorgeCafe_bold';
 }
 
+@media screen and (max-width: 576px) {
+    .logo {
+        width: 75%;
+    }
+}
+
 /*---------------------------------------------------------- 
 # Section Hero  
 ----------------------------------------------------------*/ 
-
 .back-hero {
     background-color: var(--bleufoncer);
     background-image: url(../assets/artworks/world_of_ai-magination.jpg);
@@ -113,13 +118,6 @@ body {
     max-height: 600px;
 }
 
-.app {
-    border: 5px solid var(--blanc);
-    background-color: var(--orangejaune);
-    border-radius: 25px;
-    min-height: 600px;
-}
-
 .hero h1 {
     color: var(--blanc);
 }
@@ -133,13 +131,46 @@ body {
 .hero em {
     font-style: normal;
     font-family: 'Heavitas';
-    font-size: 4em;
-    letter-spacing: 10px;
+    font-size: 4.2em;
+    letter-spacing: -1px;
 }
 
 .btn {
     height: 70px;
     width: 75%;
+}
+
+.app-iframe {
+    border-radius: 25px;
+    transform: scale(1.03);
+    border: 5px solid var(--blanc);
+    background-color: var(--orangejaune);
+    border-radius: 25px;
+    min-height: 600px;
+}
+
+@media screen and (max-width: 992px) {
+    .back-hero {
+        min-height: 150vh;
+    }
+    .hero {
+        min-height: 150vh;
+    }
+    .info-app {
+        max-height: 800px;
+    }
+    .app {
+        min-height: 800px;
+    }
+    .hero em {
+        font-size: 10vmin;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero em {
+        font-size: 8vmin;
+    }
 }
 
 /*---------------------------------------------------------- 
@@ -152,7 +183,6 @@ footer {
 }
 
 .barre-color-footer {
-    bottom: 0;
     height: 0.5em;
     width: 100%;
     background-image: linear-gradient(to right, var(--alpha), var(--orangejaune), var(--alpha));
