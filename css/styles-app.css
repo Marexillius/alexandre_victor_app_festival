@@ -7,6 +7,7 @@
     --orangejaune: #FCA311;
     --grispale: #E5E5E5;
     --blanc: #FFFFFF; 
+    --alpha: rgba(00,00,00,00)
 }
 
 @font-face {
@@ -34,7 +35,7 @@ h1, .h1{
 }
 
 h2, .h2{
-    font-size: 36px; font-weight: 700; color: var(--blanc);
+    font-size: 36px; font-weight: 700; color: var(--blanc); font-family: Heavitas;
 }
 
 h3, .h3{ 
@@ -54,5 +55,38 @@ h6, .h6{
 }
   
 /*---------------------------------------------------------- 
-# Section Hero  
+# Navbar  
 ----------------------------------------------------------*/ 
+
+.navbar {
+    background-color: var(--noir);
+    color: var(--blanc);
+}
+
+.navbar-color {
+    height: 5em;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--alpha), var(--orangejaune), var(--alpha));
+}
+
+.nav-link {
+    font-family: 'LouisGeorgeCafe_bold';
+}
+
+.navbar-toggler {
+    border-width: 0.2vw;
+    border-color: var(--orangejaune);
+}
+
+.nav-image {
+    width: 7vw;
+}
+
+footer {
+    background-color: var(--bleufoncer);
+    color: var(--blanc);
+}
+
+.logo-tim {
+    width: 25vw;
+}
