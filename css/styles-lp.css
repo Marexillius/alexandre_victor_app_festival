@@ -140,6 +140,11 @@ body {
     width: 75%;
 }
 
+.btn-text {
+    margin: auto;
+    font-size: 20px;
+}
+
 .app-iframe {
     border-radius: 25px;
     transform: scale(1.03);
