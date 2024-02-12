@@ -96,7 +96,7 @@ h6, .h6{
 
 .orange-line {
     background-image: linear-gradient(to right, var(--bs-dark), var(--bs-primary), var(--bs-dark));
-    height: 0.5vw;
+    height: 1vw;
 }
 
 /*---------------------------------------------------------- 
