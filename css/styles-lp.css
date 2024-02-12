@@ -32,28 +32,28 @@
 
 h1, .h1 {
     font-family: 'Heavitas';
-    font-size: 50px; font-weight: 900; color: var(--blanc);
+    font-size: 50px; font-weight: 900; color: var(--bs-white);
 }
 
 h2, .h2{
     font-family: 'Heavitas';
-    font-size: 36px; font-weight: 700; color: var(--blanc);
+    font-size: 36px; font-weight: 700; color: var(--bs-white);
 }
 
 h3, .h3{ 
-    font-size: 18px; font-weight: 300; color: var(--blanc);
+    font-size: 18px; font-weight: 300; color: var(--bs-white);
 }
 
 h4, .h4{
-    font-size: 10px; font-weight: 600; color: var(--blanc);
+    font-size: 10px; font-weight: 600; color: var(--bs-white);
 }
 
 h5, .h5{ 
-    font-size: 8px; font-weight: 600; color: var(--blanc);
+    font-size: 8px; font-weight: 600; color: var(--bs-white);
 }
 
 h6, .h6{
-    font-size: 5px; font-weight: 300; color: var(--blanc);
+    font-size: 5px; font-weight: 300; color: var(--bs-white);
 }
 
 p {
@@ -62,7 +62,7 @@ p {
 }
 
 body {
-    background-color: var(--bleufoncer);
+    background-color: var(--bs-secondary);
 }
 
 /*---------------------------------------------------------- 
@@ -70,14 +70,14 @@ body {
 ----------------------------------------------------------*/ 
 
 .navbar {
-    background-color: var(--noir);
-    color: var(--blanc);
+    background-color: var(--bs-black);
+    color: var(--bs-blanc);
 }
 
 .barre-color-navbar {
     height: 5em;
     width: 100%;
-    background-image: linear-gradient(to right, var(--alpha), var(--orangejaune), var(--alpha));
+    background-image: linear-gradient(to right, var(--alpha), var(--bs-primary), var(--alpha));
 }
 
 .nav-link {
@@ -94,7 +94,7 @@ body {
 # Section Hero  
 ----------------------------------------------------------*/ 
 .back-hero {
-    background-color: var(--bleufoncer);
+    background-color: var(--bs-secondary);
     background-image: url(../assets/artworks/world_of_ai-magination.jpg);
     background-size: cover;
     background-position: center;
@@ -105,7 +105,7 @@ body {
 
 .hero {
     height: 100vh;
-    color: var(--blanc);
+    color: var(--bs-white);
 }
 
 .hero .row {
@@ -113,19 +113,19 @@ body {
 }
 
 .info-app {
-    background-color: var(--orangejaune);
+    background-color: var(--bs-primary);
     border-radius: 25px;
     max-height: 600px;
 }
 
 .hero h1 {
-    color: var(--blanc);
+    color: var(--bs-white);
 }
 
 .hero hr {
     width: 100%;
     border-radius: 25px;
-    border: 5px solid var(--blanc);
+    border: 5px solid var(--bs-white);
 }
 
 .hero em {
@@ -148,8 +148,8 @@ body {
 .app-iframe {
     border-radius: 25px;
     transform: scale(1.03);
-    border: 5px solid var(--blanc);
-    background-color: var(--orangejaune);
+    border: 5px solid var(--bs-white);
+    background-color: var(--bs-primary);
     border-radius: 25px;
     min-height: 600px;
 }
@@ -184,23 +184,23 @@ body {
 
 footer {
     max-height: 15rem;
-    background-color: var(--noir);
+    background-color: var(--bs-black);
 }
 
 .barre-color-footer {
     height: 0.5em;
     width: 100%;
-    background-image: linear-gradient(to right, var(--alpha), var(--orangejaune), var(--alpha));
+    background-image: linear-gradient(to right, var(--alpha), var(--bs-primary), var(--alpha));
 }
 
 p.lien-git {
-    color: var(--blanc);
+    color: var(--bs-white);
     font-family: 'LouisGeorgeCafe_bold';
     font-size: 16px;
 }
 
 footer .container-fluid .row div:nth-child(3) a {
-    color: var(--blanc);
+    color: var(--bs-white);
     font-family: 'LouisGeorgeCafe_bold';
     font-size: 16px;
     font-style: normal;
@@ -208,9 +208,5 @@ footer .container-fluid .row div:nth-child(3) a {
 }
 
 footer .container-fluid .row div:nth-child(3) a:hover {
-    color: var(--orangejaune);
-    font-family: 'LouisGeorgeCafe_bold';
-    font-size: 16px;
-    font-style: normal;
-    text-decoration: none;
+    color: var(--bs-primary);
 }
