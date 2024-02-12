@@ -2,11 +2,6 @@
 # Styles Généraux 
 ---------------------------------------------------------*/
 :root {
-    --noir: #000000;
-    --bleufoncer: #14213D;
-    --orangejaune: #FCA311;
-    --grispale: #E5E5E5;
-    --blanc: #FFFFFF; 
     --alpha: rgba(00,00,00,00)
 }
 
@@ -31,27 +26,27 @@
 }
 
 h1, .h1{ 
-    font-size: 50px; font-weight: 900; color: var(--blanc);
+    font-size: 50px; font-weight: 900; color: var(--bs-white);
 }
 
 h2, .h2{
-    font-size: 36px; font-weight: 700; color: var(--blanc);
+    font-size: 36px; font-weight: 700; color: var(--bs-white);
 }
 
 h3, .h3{ 
-    font-size: 18px; font-weight: 300; color: var(--blanc);
+    font-size: 18px; font-weight: 300; color: var(--bs-white);
 }
 
 h4, .h4{
-    font-size: 10px; font-weight: 600; color: var(--blanc);
+    font-size: 10px; font-weight: 600; color: var(--bs-white);
 }
 
 h5, .h5{ 
-    font-size: 8px; font-weight: 600; color: var(--blanc);
+    font-size: 8px; font-weight: 600; color: var(--bs-white);
 }
 
 h6, .h6{
-    font-size: 5px; font-weight: 300; color: var(--blanc);
+    font-size: 5px; font-weight: 300; color: var(--bs-white);
 }
   
 /*---------------------------------------------------------- 
@@ -64,14 +59,14 @@ h6, .h6{
 }
 
 .navbar {
-    background-color: var(--noir);
-    color: var(--blanc);
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
 }
 
 .navbar-color {
     height: 5em;
     width: 100%;
-    background-image: linear-gradient(to right, var(--alpha), var(--orangejaune), var(--alpha));
+    background-image: linear-gradient(to right, var(--alpha), var(--bs-primary), var(--alpha));
 }
 
 .nav-link {
@@ -80,7 +75,7 @@ h6, .h6{
 
 .navbar-toggler {
     border-width: 0.3vw;
-    border-color: var(--orangejaune);
+    border-color: var(--bs-primary);
 }
 
 .navbar-toggler-icon {
@@ -100,7 +95,7 @@ h6, .h6{
 }
 
 .orange-line {
-    background-image: linear-gradient(to right, var(--noir), var(--orangejaune), var(--noir));
+    background-image: linear-gradient(to right, var(--bs-dark), var(--bs-primary), var(--bs-dark));
     height: 0.5vw;
 }
 
@@ -109,7 +104,7 @@ h6, .h6{
 ----------------------------------------------------------*/ 
 
 main {
-    background-color: var(--noir);
+    background-color: var(--bs-dark);
 }
 
 .overflow-scroll {
@@ -131,7 +126,7 @@ main {
     border-width: 0.3vw;
     border-style: solid;
     border-radius: 10px;
-    border-color: var(--orangejaune);
+    border-color: var(--bs-primary);
     white-space: nowrap;
 }
 
@@ -140,8 +135,8 @@ main {
 ----------------------------------------------------------*/ 
 
 footer {
-    background-color: var(--bleufoncer);
-    color: var(--blanc);
+    background-color: var(--bs-secondary);
+    color: var(--bs-white);
 }
 
 .logo-tim {
