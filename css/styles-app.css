@@ -79,8 +79,14 @@ h6, .h6{
 }
 
 .navbar-toggler {
-    border-width: 0.2vw;
+    border-width: 0.3vw;
     border-color: var(--orangejaune);
+}
+
+.navbar-toggler-icon {
+    width: 100%;
+    max-width: 30px;
+    min-width: 20px;
 }
 
 .nav-logo {
