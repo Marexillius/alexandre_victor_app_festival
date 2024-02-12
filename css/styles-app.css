@@ -107,15 +107,6 @@ main {
     background-color: var(--bs-dark);
 }
 
-.overflow-scroll {
-    overflow-x: scroll;
-    scrollbar-width: none;
-}
-
-.overflow-scroll::-webkit-scrollbar {
-    display: none;
-}
-
 .list-group-item {
     background-color: var(--alpha);
     border: none;
@@ -123,7 +114,7 @@ main {
 
 .filtre-bouton {
     padding: 0.8vw;
-    border-width: 0.3vw;
+    border-width: 1vw;
     border-style: solid;
     border-radius: 10px;
     border-color: var(--bs-primary);
