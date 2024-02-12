@@ -35,7 +35,7 @@ h1, .h1{
 }
 
 h2, .h2{
-    font-size: 36px; font-weight: 700; color: var(--blanc); font-family: Heavitas;
+    font-size: 36px; font-weight: 700; color: var(--blanc);
 }
 
 h3, .h3{ 
@@ -58,6 +58,11 @@ h6, .h6{
 # Navbar  
 ----------------------------------------------------------*/ 
 
+.site-title {
+    font-size: 3vw;
+    font-family: Heavitas;
+}
+
 .navbar {
     background-color: var(--noir);
     color: var(--blanc);
@@ -78,8 +83,50 @@ h6, .h6{
     border-color: var(--orangejaune);
 }
 
-.nav-image {
+.nav-logo {
     width: 7vw;
+}
+
+.nav-profile {
+    width: 7vw;
+    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 50%);
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 50%);
+}
+
+.orange-line {
+    background-image: linear-gradient(to right, var(--noir), var(--orangejaune), var(--noir));
+    height: 0.5vw;
+}
+
+/*---------------------------------------------------------- 
+# Recherche et filtres
+----------------------------------------------------------*/ 
+
+main {
+    background-color: var(--noir);
+}
+
+.overflow-scroll {
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.overflow-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.list-group-item {
+    background-color: var(--alpha);
+    border: none;
+}
+
+.filtre-bouton {
+    padding: 0.8vw;
+    border-width: 0.3vw;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--orangejaune);
+    white-space: nowrap;
 }
 
 /*---------------------------------------------------------- 
@@ -92,5 +139,5 @@ footer {
 }
 
 .logo-tim {
-    width: 25vw;
+    width: 100%;
 }
