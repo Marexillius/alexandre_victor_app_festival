@@ -7,6 +7,7 @@
     --orangejaune: #FCA311;
     --grispale: #E5E5E5;
     --blanc: #FFFFFF; 
+    --alpha: rgba(00,00,00,00)
 }
 
 @font-face {
@@ -54,5 +55,89 @@ h6, .h6{
 }
   
 /*---------------------------------------------------------- 
-# Section Hero  
+# Navbar  
 ----------------------------------------------------------*/ 
+
+.site-title {
+    font-size: 3vw;
+    font-family: Heavitas;
+}
+
+.navbar {
+    background-color: var(--noir);
+    color: var(--blanc);
+}
+
+.navbar-color {
+    height: 5em;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--alpha), var(--orangejaune), var(--alpha));
+}
+
+.nav-link {
+    font-family: 'LouisGeorgeCafe_bold';
+}
+
+.navbar-toggler {
+    border-width: 0.2vw;
+    border-color: var(--orangejaune);
+}
+
+.nav-logo {
+    width: 7vw;
+}
+
+.nav-profile {
+    width: 7vw;
+    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 50%);
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 50%);
+}
+
+.orange-line {
+    background-image: linear-gradient(to right, var(--noir), var(--orangejaune), var(--noir));
+    height: 0.5vw;
+}
+
+/*---------------------------------------------------------- 
+# Recherche et filtres
+----------------------------------------------------------*/ 
+
+main {
+    background-color: var(--noir);
+}
+
+.overflow-scroll {
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.overflow-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.list-group-item {
+    background-color: var(--alpha);
+    border: none;
+}
+
+.filtre-bouton {
+    padding: 0.8vw;
+    border-width: 0.3vw;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--orangejaune);
+    white-space: nowrap;
+}
+
+/*---------------------------------------------------------- 
+# Footer
+----------------------------------------------------------*/ 
+
+footer {
+    background-color: var(--bleufoncer);
+    color: var(--blanc);
+}
+
+.logo-tim {
+    width: 100%;
+}

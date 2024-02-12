@@ -1,32 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all"/>
     <meta name="author" content="Victor Gileau">
     <title>Artechouse - LandingPage</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="./css/styles-lp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <nav>
+<body data-bs-spy="scroll" data-bs-target="mainNav">
+    <header>
+        <div class="barre-color-navbar fixed-top"></div>
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="./assets/logo.svg" alt="icon">
+                </a>
+    
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+                    aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div id="mainNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav" role="tablist">
+                        <li class="nav-item">
+                            <a href="#appli" class="nav-link">L'appli</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Fonctionnalités</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">En voir Plus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Témoignages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Infolettre</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
 
-    </nav>
-    <section class="hero">
+    <main>
 
-    </section>
-
-    <h1>Artechouse</h1>
-
-    <!--Structure-->
-    <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+        <div class="back-hero">
+            <div  class="container main-container">
+                <div class="row">
+                    <div class="separateur p-5 p-lg-0">
+                    </div>
+                </div>
+                <section id="appli" class="hero">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-12 col-lg-7">
+                            <div class="info-app p-4 my-sm-5">
+                                <div class="d-flex flex-column justify-content-lg-center align-items-center">
+                                    <h1 class="align-self-start">Découvrez l'appli<br>officielle du festival </h1>
+                                    <em class="align-self-start">ARTECHOUSE</em>
+                                    <hr>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore
+                                        et dolore magna aliqua.
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <button type="button" class="btn btn-outline-light align-self-md-start">Téléchargez maintenant</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-9 offset-lg-1 col-lg-4">
+                                <iframe class="app-iframe p-2" src="./app/index.html" width="100%" height="600"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-    </div>
-    <!--Structure_fin-->
+
+    </main>
+
+    <footer class="p-3 m1-1">
+        <div class="barre-color-footer my-3"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center col-lg-6 text-lg-start order-lg-1">
+                    <p class="lien-git">Victor Gileau</p>
+                </div>
+                <div class="col-12 text-center col-lg-6 text-lg-start order-lg-3">
+                    <p class="lien-git">Alexandre Gervais</p>
+                </div>
+                <div class="col-12 text-center col-lg-6 text-lg-end order-lg-2">
+                    <a class="lien-git" href="https://github.com/Marexillius/alexandre-victor-app-festival-art/tree/main">https://github.com/Marexillius/alexandre-victor-app-festival-art/tree/main</a>
+                </div>
+                <div class="col-12 text-center col-lg-6 text-lg-end order-lg-4">
+                    <p class="lien-git">@2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
