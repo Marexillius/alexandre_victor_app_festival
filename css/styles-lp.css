@@ -261,23 +261,23 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
-    .card-body {
+    .back-section-feature .card-body {
         background-color: var(--bs-primary);
         color: var(--bs-white);
-        min-height: 650px;
+        min-height: 550px;
     }
 }
 
-@media screen and (max-width: 992px) {
-    .card-body {
+@media screen and (max-width: 1200px) {
+    .back-section-feature .card-body {
         background-color: var(--bs-primary);
         color: var(--bs-white);
-        min-height: 600px;
+        min-height: 750px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .card-body {
+    .back-section-feature .card-body {
         background-color: var(--bs-primary);
         color: var(--bs-white);
         min-height: 300px;
@@ -308,6 +308,7 @@ body {
 
 .section-testimonials .card {
     background-color: var(--bs-secondary);
+    min-height: 650px;
 }
 
 .section-testimonials .card-body {
@@ -316,13 +317,27 @@ body {
 }
 
 .section-testimonials .img-user {
-    min-width: 8em;
-    max-width: 25em;
+    min-height: 8em;
+    max-height: 25em;
 }
 
 .section-testimonials .img-user img {
     border-radius: 50px;
     box-shadow: inset 0 0 0 5px var(--bs-primary);
+}
+
+.section-testimonials .img-user .icon-testimonials {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--bleufoncer);
+    background-size: 2em;
+    border-radius: 50px;
+    box-shadow: 0 0 0 3px var(--bs-primary);
+}
+
+.section-testimonials .img-user .icon-testimonials i {
+    font-size: 3em;
 }
 
 /*---------------------------------------------------------- 
