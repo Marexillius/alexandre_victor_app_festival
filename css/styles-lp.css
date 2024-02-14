@@ -350,28 +350,28 @@ body {
 
 @media screen and (max-width: 1400px) {
     .section-testimonials .card {
-        min-height: 550px;
+        min-height: 680px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .section-testimonials .card {
-        min-height: 800px;
-    }
-    .section-testimonials .card-body {
-        min-height: 100px;
+        min-height: 750px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .section-testimonials .card {
-        min-height: 750px;
+        min-height: 700px;
     }
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 575px) {
     .section-testimonials .card {
-        min-height: 200px;
+        min-height: auto;
+    }
+    .section-testimonials .card-body {
+        min-height: auto;
     }
 }
 
