@@ -308,7 +308,7 @@ body {
 
 .section-testimonials .card {
     background-color: var(--bs-secondary);
-    min-height: 650px;
+    min-height: 700px;
 }
 
 .section-testimonials .card-body {
@@ -338,6 +338,33 @@ body {
 
 .section-testimonials .img-user .icon-testimonials i {
     font-size: 3em;
+}
+
+@media screen and (max-width: 1400px) {
+    .section-testimonials .card {
+        min-height: 550px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-testimonials .card {
+        min-height: 800px;
+    }
+    .section-testimonials .card-body {
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-testimonials .card {
+        min-height: 750px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .section-testimonials .card {
+        min-height: 300px;
+    }
 }
 
 /*---------------------------------------------------------- 
