@@ -62,7 +62,7 @@ p {
 }
 
 body {
-    background-color: var(--bs-secondary);
+    background-color: var(--bs-black);
 }
 
 /*---------------------------------------------------------- 
@@ -272,7 +272,15 @@ body {
     .back-section-feature .card-body {
         background-color: var(--bs-primary);
         color: var(--bs-white);
-        min-height: 750px;
+        min-height: 700px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .back-section-feature .card-body {
+        background-color: var(--bs-primary);
+        color: var(--bs-white);
+        min-height: 600px;
     }
 }
 
@@ -361,9 +369,9 @@ body {
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 565px) {
     .section-testimonials .card {
-        min-height: 300px;
+        min-height: 200px;
     }
 }
 
