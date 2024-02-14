@@ -317,7 +317,7 @@ body {
 .section-testimonials .card {
     background-color: var(--bs-secondary);
     min-height: 600px;
-    box-shadow: 10px 10px var(--bs-primary);
+    box-shadow: 6px 6px var(--bs-primary);
 }
 
 .section-testimonials .card-body {
