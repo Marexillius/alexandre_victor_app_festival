@@ -310,6 +310,10 @@ body {
     min-height: 450px;
 }
 
+.section-testimonials .card:has(.col-lg-8) {
+    min-height: auto;
+}
+
 .section-testimonials p, .section-testimonials h1 {
     color: var(--bs-primary);
 }
