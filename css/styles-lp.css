@@ -208,7 +208,7 @@ body {
 .card-body {
     background-color: var(--bs-primary);
     color: var(--bs-white);
-    min-height: 500px;
+    min-height: 450px;
 }
 
 .card-body h1 {
@@ -258,6 +258,30 @@ body {
 .card-body p, .text-descritpion-section-feature p {
     line-height: 1.2em;
     color: var(--bs-white);
+}
+
+@media screen and (max-width: 1400px) {
+    .card-body {
+        background-color: var(--bs-primary);
+        color: var(--bs-white);
+        min-height: 650px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card-body {
+        background-color: var(--bs-primary);
+        color: var(--bs-white);
+        min-height: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-body {
+        background-color: var(--bs-primary);
+        color: var(--bs-white);
+        min-height: 300px;
+    }
 }
 
 /*---------------------------------------------------------- 
