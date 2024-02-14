@@ -115,7 +115,7 @@ body {
 .info-app {
     background-color: var(--bs-primary);
     border-radius: 25px;
-    max-height: 600px;
+    max-height: 620px;
 }
 
 .hero h1 {
@@ -304,6 +304,25 @@ body {
 
 .section-testimonials p, .section-testimonials h1 {
     color: var(--bs-primary);
+}
+
+.section-testimonials .card {
+    background-color: var(--bs-secondary);
+}
+
+.section-testimonials .card-body {
+    background-color: var(--bs-secondary);
+    min-height: 200px;
+}
+
+.section-testimonials .img-user {
+    min-width: 8em;
+    max-width: 25em;
+}
+
+.section-testimonials .img-user img {
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 5px var(--bs-primary);
 }
 
 /*---------------------------------------------------------- 
