@@ -25,6 +25,10 @@
     src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe\ Light.ttf) format('truetype');
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h1, .h1{ 
     font-size: 50px; font-weight: 900; color: var(--bs-white);
 }
@@ -90,8 +94,8 @@ h6, .h6{
 
 .nav-profile {
     width: 7vw;
-    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 50%);
-    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 50%);
+    -webkit-mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
+    mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
 }
 
 .orange-line {
@@ -119,6 +123,35 @@ main {
     border-radius: 10px;
     border-color: var(--bs-primary);
     white-space: nowrap;
+}
+
+/*---------------------------------------------------------- 
+# Cards
+----------------------------------------------------------*/
+
+.card {
+    text-decoration: none;
+    overflow: hidden;
+    max-width: 200px;
+}
+
+.carouselImg {
+    height: 20vh;
+    object-fit: cover;
+}
+
+.carouselCardText {
+    font-size: 12px;
+}
+
+.carouselArtist {
+    width: 6vw;
+    -webkit-mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
+    mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
+}
+
+#carouselCards {
+    width: 140%;
 }
 
 /*---------------------------------------------------------- 
