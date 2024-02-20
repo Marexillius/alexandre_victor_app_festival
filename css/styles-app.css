@@ -27,6 +27,7 @@
 
 body {
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 h1, .h1{ 
@@ -145,7 +146,7 @@ main {
 }
 
 .carouselArtist {
-    width: 6vw;
+    width: 11vw;
     -webkit-mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
     mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
 }
