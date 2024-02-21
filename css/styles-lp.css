@@ -4,6 +4,7 @@
 :root {
     --alpha: rgba(0, 0, 0, 0);
     --noir: #000000;
+    --dark80: #0000003b;
     --bleufoncer: #14213D;
     --orangejaune: #FCA311;
     --grispale: #E5E5E5;
@@ -390,16 +391,49 @@ body {
 
 .back-FAQ {
     background-color: var(--bs-secondary);
+    background-image: linear-gradient(to bottom, var(--bs-dark) 15%, var(--alpha), var(--bs-dark)), url(../assets/artworks/copacabana.jpg);
 }
 
 .FAQ .accordion-item, .FAQ .accordion-header {
     background-image: linear-gradient(to bottom, var(--bs-dark), var(--alpha));
     background-color: var(--bs-secondary);
     color: var(--bs-primary);
+    font-size: 24px;
 }
 
 .FAQ .accordion-item {
     box-shadow: 10px 10px var(--bs-primary);
+}
+
+.FAQ .accordion-item p {
+    font-size: 24px;
+}
+
+.FAQ .accordion-header h1 {
+    font-size: 30px;
+}
+
+/*---------------------------------------------------------- 
+# Section Infolettre
+----------------------------------------------------------*/
+
+.back-infoLettre {
+    background-image: url(../assets/artworks/all_heat_and_no_light.jpg);
+    background-color: var(--bs-secondary);
+    background-blend-mode: soft-light;
+    object-fit: cover;
+}
+
+.infolettre {
+    background-color: var(--dark80);
+    background-image: radial-gradient(var(--dark80) 50%, var(--bs-dark));
+    border-radius: 50px;
+    text-shadow: 4px 4px var(--bs-secondary);
+    box-shadow: 10px 10px var(--bs-primary);
+}
+
+.abonnement {
+    font-size: 24px;
 }
 
 /*---------------------------------------------------------- 
