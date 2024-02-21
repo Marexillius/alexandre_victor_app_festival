@@ -418,10 +418,16 @@ body {
 ----------------------------------------------------------*/
 
 .back-infoLettre {
+    width: 100%;
+    height: auto;
+}
+
+.img-back {
     background-image: url(../assets/artworks/all_heat_and_no_light.jpg);
     background-color: var(--bs-secondary);
     background-blend-mode: soft-light;
     object-fit: cover;
+    object-position: 0% 0%;
 }
 
 .infolettre {

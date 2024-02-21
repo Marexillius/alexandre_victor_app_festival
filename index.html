@@ -633,27 +633,33 @@
         </div>
 
         <div class="back-infoLettre" id="infoLettre">
-            <div  class="container main-container">
-                <div class="row">
-                    <div class="separateur p-5 p-lg-0">
-                    </div>
-                </div>
-                <section class="infoLettre">
-                    <div class="row d-flex align-items-center justify-content-end">
-                        <div class="col-12 col-md-6">
-                            <div class="infolettre text-center text-md-start text-primary p-5">
-                                <h1 class="mb-4">Infolettre</h1>
-                                <p>
-                                    Abonnez-vous à notre infolettre pour recevoir des nouvelles sur les mises-à-jour et nouvelles fonctionnalités de l’appli,
-                                    en plus de recevoir en primeur les détails des prochaines éditions du festival.
-                                </p>
-                                <button type="button" class="btn btn-outline-primary mt-5"><p class="btn-text abonnement">Je m'abonne</p></button>
-                            </div>
+            <div class="img-back text-center">
+                <div class="container main-container">
+                    <div class="row">
+                        <div class="separateur p-5 p-lg-0">
                         </div>
                     </div>
-                </section>
-                <div class="row">
-                    <div class="separateur p-5 p-lg-0">
+                    <section class="infoLettre">
+                        <div class="row d-flex align-items-center justify-content-end">
+                            <div class="col-12 col-md-6">
+                                <div class="infolettre text-center text-md-start text-primary p-5">
+                                    <h1 class="mb-4">Infolettre</h1>
+                                    <p>
+                                        Abonnez-vous à notre infolettre pour recevoir des nouvelles sur les mises-à-jour et
+                                        nouvelles fonctionnalités de l’appli,
+                                        en plus de recevoir en primeur les détails des prochaines éditions du festival.
+                                    </p>
+                                    <button type="button" class="btn btn-outline-primary mt-5" data-bs-toggle="modal"
+                                        data-bs-target="#modalAbonnment">
+                                        <p class="btn-text abonnement">Je m'abonne</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="row">
+                        <div class="separateur p-5 p-lg-0">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -681,6 +687,34 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" tabindex="-1" id="modalAbonnment">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-3">
+                <div class="container">
+                    <div class="column justify-content-end align-items-center">
+                        <div class="col-12">
+                            <div class="modal-header">
+                                <h1 class="modal-title">Restez informé !</h1>
+                                <button type="button" class="btn-close m-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                <button type="button" class="btn btn-primary">M'inscrire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
