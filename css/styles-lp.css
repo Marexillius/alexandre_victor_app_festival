@@ -385,6 +385,24 @@ body {
 }
 
 /*---------------------------------------------------------- 
+# Section FAQ  
+----------------------------------------------------------*/
+
+.back-FAQ {
+    background-color: var(--bs-secondary);
+}
+
+.FAQ .accordion-item, .FAQ .accordion-header {
+    background-image: linear-gradient(to bottom, var(--bs-dark), var(--alpha));
+    background-color: var(--bs-secondary);
+    color: var(--bs-primary);
+}
+
+.FAQ .accordion-item {
+    box-shadow: 10px 10px var(--bs-primary);
+}
+
+/*---------------------------------------------------------- 
 # Section Footer 
 ----------------------------------------------------------*/
 
