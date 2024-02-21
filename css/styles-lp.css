@@ -392,6 +392,8 @@ body {
 .back-FAQ {
     background-color: var(--bs-secondary);
     background-image: linear-gradient(to bottom, var(--bs-dark) 15%, var(--alpha), var(--bs-dark)), url(../assets/artworks/copacabana.jpg);
+    background-position: 0;
+    background-size: 50%;
 }
 
 .FAQ .accordion-item, .FAQ .accordion-header {
@@ -413,6 +415,12 @@ body {
     font-size: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+    .back-FAQ {
+        background-size: 150%;
+    }
+}
+
 /*---------------------------------------------------------- 
 # Section Infolettre
 ----------------------------------------------------------*/
@@ -424,6 +432,8 @@ body {
 
 .img-back {
     background-image: url(../assets/artworks/all_heat_and_no_light.jpg);
+    background-position: 50%;
+    background-size: 100%;
     background-color: var(--bs-secondary);
     background-blend-mode: soft-light;
     object-fit: cover;
@@ -440,6 +450,12 @@ body {
 
 .abonnement {
     font-size: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+    .img-back {
+        background-size: 250%;
+    }
 }
 
 /*---------------------------------------------------------- 
