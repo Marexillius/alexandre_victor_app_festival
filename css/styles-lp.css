@@ -432,8 +432,8 @@ body {
 
 .img-back {
     background-image: url(../assets/artworks/all_heat_and_no_light.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
     background-color: var(--bs-secondary);
     background-blend-mode: soft-light;
 }
@@ -452,7 +452,7 @@ body {
 
 @media screen and (max-width: 1200px) {
     .img-back {
-        background-size: 250%;
+        background-size: cover;
     }
 }
 
