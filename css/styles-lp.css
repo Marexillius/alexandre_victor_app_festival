@@ -117,6 +117,7 @@ body {
     background-color: var(--bs-primary);
     border-radius: 25px;
     max-height: 620px;
+    box-shadow: 10px 10px var(--bs-secondary);
 }
 
 .hero h1 {
@@ -413,6 +414,10 @@ body {
 
 .FAQ .accordion-header h1 {
     font-size: 30px;
+}
+
+.FAQ .accordion-body {
+    font-family: 'LouisGeorgeCafe_bold';
 }
 
 @media screen and (max-width: 1200px) {
