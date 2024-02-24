@@ -27,7 +27,7 @@
 
 body {
     overflow-x: hidden;
-    max-width: 100%;
+    min-width: 100%;
 }
 
 h1, .h1{ 
@@ -126,14 +126,26 @@ main {
     white-space: nowrap;
 }
 
+.filtres {
+    font-family: 'LouisGeorgeCafe_normal';
+}
+
 /*---------------------------------------------------------- 
 # Cards
 ----------------------------------------------------------*/
 
-.card {
+.cardCarouselStyle {
     text-decoration: none;
-    overflow: hidden;
-    max-width: 200px;
+    overflow-x: auto;
+    min-width: 200px;
+}
+
+.card {
+    font-family: 'LouisGeorgeCafe_normal';
+}
+
+.card-title {
+    font-family: 'Heavitas';
 }
 
 .carouselImg {
@@ -146,13 +158,55 @@ main {
 }
 
 .carouselArtist {
-    width: 11vw;
+    width: 100%;
     -webkit-mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
     mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
 }
 
 #carouselCards {
     width: 140%;
+    min-width: 576px;
+}
+
+.cardCarouselInfo {
+    font-size: 77%;
+    text-align: end;
+}
+
+.cardCarouselTime {
+    font-size: 67%;
+}
+
+.cardContainer:hover {
+    background-color: var(--bs-info);
+}
+
+.carouselImg {
+    height: 20vh;
+    object-fit: cover;
+}
+
+.showcaseCardText {
+    font-size: 14px;
+}
+
+.cardShowcaseInfo {
+    font-size: 80%;
+    text-align: end;
+}
+
+.cardShowcaseTime {
+    font-size: 67%;
+}
+
+.showcaseArtist {
+    width: 50%;
+    -webkit-mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
+    mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
+}
+
+.showcaseTitle {
+    text-align: center;
 }
 
 /*---------------------------------------------------------- 

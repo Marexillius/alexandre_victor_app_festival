@@ -17,7 +17,7 @@
   <!--Header-->
   <header>
     <nav class="navbar navbar-dark">
-      <div class="container-fluid">
+      <div class="container">
         <!-- Hamburger button -->
         <button class="navbar-toggler toggler-style col-2 text-center" data-bs-toggle="collapse"
           data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
@@ -71,7 +71,7 @@
         </div>
     </section>
     <section class="row flex-nowrap mt-3">
-      <div class="col-12 overflow-x-scroll">
+      <div class="col-12 overflow-x-auto filtres">
         <ul class="list-unstyled list-group list-group-horizontal">
           <li class="list-group-item">
             <button class="filtre-bouton">Toutes</button>
@@ -105,29 +105,118 @@
       </div>
     </section>
     <!--Carousel de cartes-->
-    <section class="container" id="carouselCards">
+    <section class="container-fluid mb-3" id="carouselCards">
       <div class="row">
         <div class="col-12">
           <h2>En vedette</h2>
         </div>
       </div>
-      <div class="row overflow-x-scroll">
+      <div class="row overflow-x-scroll flex-nowrap">
         <div class="col-5">
-          <a href="artwork.html" class="card mb-3 p-1">
+          <a href="artwork.html" class="card cardCarouselStyle p-1 cardContainer">
             <img src="../assets/artworks/Universarium.jpg" alt="universarium" class="card-img-top carouselImg">
             <div class="card-body">
-              <h3 class="card-title">Universarium</h3>
-              <p class="card-text carouselCardText">Par Stefan Harnisch</p>
+              <div class="row">
+                <div class="col">
+                  <h3 class="card-title">Universarium</h3>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <p class="card-text carouselCardText">Par Stefan Harnisch</p>
+                </div>
+              </div>
+              <div class="row cardCarouselTime">
+                <div class="col-6">
+                  <span><i class="bi bi-calendar"></i> 13 Mars 2024</span>
+                </div>
+                <div class="col-4 offset-2">
+                  <span><i class="bi bi-clock"></i> 18h</span>
+                </div>
+              </div>
             </div>
             <div class="card-footer">
               <div class="row">
-                <img src="../assets/artists/stefan-harnisch.png" alt="Stefan Harnisch" class="carouselArtist">
+                <div class="col-4">
+                  <img src="../assets/artists/stefan-harnisch.png" alt="Stefan Harnisch" class="carouselArtist">
+                </div>
+                <div class="col-8 cardCarouselInfo">
+                  <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                </div>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-5"></div>
-        <div class="col-5"></div>
+        <div class="col-5">
+          <a href="artwork.html" class="card cardCarouselStyle mb-3 p-1 cardContainer">
+            <img src="../assets/artworks/Code Poems.png" alt="code poems" class="card-img-top carouselImg">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h3 class="card-title">Code Poems</h3>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <p class="card-text carouselCardText">Par ARTECHOUSE</p>
+                </div>
+              </div>
+              <div class="row cardCarouselTime">
+                <div class="col-6">
+                  <span><i class="bi bi-calendar"></i> 30 Mars 2024</span>
+                </div>
+                <div class="col-4 offset-2">
+                  <span><i class="bi bi-clock"></i> 13h</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../assets/artists/artechouse.png" alt="artechouse logo" class="carouselArtist">
+                </div>
+                <div class="col-8 cardCarouselInfo">
+                  <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-5">
+          <a href="artwork.html" class="card cardCarouselStyle mb-3 p-1 cardContainer">
+            <img src="../assets/artworks/copacabana.jpg" alt="copacabana" class="card-img-top carouselImg">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h3 class="card-title">Copacabana</h3>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <p class="card-text carouselCardText">Par Bill Vorn</p>
+                </div>
+              </div>
+              <div class="row cardCarouselTime">
+                <div class="col-6">
+                  <span><i class="bi bi-calendar"></i> 26 Mars 2024</span>
+                </div>
+                <div class="col-4 offset-2">
+                  <span><i class="bi bi-clock"></i> 10h</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../assets/artists/bill_vorn.jpg" alt="Bill Vorn" class="carouselArtist">
+                </div>
+                <div class="col-8 cardCarouselInfo">
+                  <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
     <!--Cartes-->
@@ -137,10 +226,110 @@
           <h2>Autres œuvres et performances</h2>
         </div>
         <div class="col-12">
-
+          <a href="artwork.html" class="card text-decoration-none mb-3 p-1 cardContainer">
+            <img src="../assets/artworks/world_of_ai-magination.jpg" alt="world of ai-magination" class="card-img-top showcaseImg">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col showcaseTitle">
+                  <h3 class="card-title">World of ai-magination</h3>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <p class="card-text showcaseCardText">Par ARTECHOUSE</p>
+                </div>
+              </div>
+              <div class="row cardShowcaseTime">
+                <div class="col-6">
+                  <span><i class="bi bi-calendar"></i> 28 Mars 2024</span>
+                </div>
+                <div class="col-4 offset-2">
+                  <span><i class="bi bi-clock"></i> 8h</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../assets/artists/artechouse.png" alt="artechouse logo" class="showcaseArtist">
+                </div>
+                <div class="col-8 cardShowcaseInfo">
+                  <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="col-12"></div>
-        <div class="col-12"></div>
+        <div class="col-12">
+          <a href="artwork.html" class="card text-decoration-none mb-3 p-1 cardContainer">
+            <img src="../assets/artworks/all_heat_and_no_light.jpg" alt="all heat and no light" class="card-img-top showcaseImg">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col showcaseTitle">
+                  <h3 class="card-title">All heat and no light</h3>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <p class="card-text showcaseCardText">Thomas Mader</p>
+                </div>
+              </div>
+              <div class="row cardShowcaseTime">
+                <div class="col-6">
+                  <span><i class="bi bi-calendar"></i> 7 Avril 2024</span>
+                </div>
+                <div class="col-4 offset-2">
+                  <span><i class="bi bi-clock"></i> 20h</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../assets/artists/thomas_mader.jpg" alt="thomas mader" class="showcaseArtist">
+                </div>
+                <div class="col-8 cardShowcaseInfo">
+                  <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12">
+          <a href="artwork.html" class="card text-decoration-none mb-3 p-1 cardContainer">
+            <img src="../assets/artworks/wave.jpg" alt="wave" class="card-img-top showcaseImg">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col showcaseTitle">
+                  <h3 class="card-title">Wave</h3>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <p class="card-text showcaseCardText">Par Squidsoup</p>
+                </div>
+              </div>
+              <div class="row cardShowcaseTime">
+                <div class="col-6">
+                  <span><i class="bi bi-calendar"></i> 1 Avril 2024</span>
+                </div>
+                <div class="col-4 offset-2">
+                  <span><i class="bi bi-clock"></i> 12h</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../assets/artists/squipsoup_logo.jpg" alt="squidsoup logo" class="showcaseArtist">
+                </div>
+                <div class="col-8 cardShowcaseInfo">
+                  <span>Plus d'info<i class="bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   </main>
