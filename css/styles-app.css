@@ -28,6 +28,7 @@
 body {
     overflow-x: hidden;
     min-width: 100%;
+    background-color: var(--bs-dark);
 }
 
 h1, .h1{ 
@@ -94,7 +95,7 @@ h6, .h6{
 }
 
 .nav-profile {
-    width: 7vw;
+    width: 100%;
     -webkit-mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
     mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
 }
@@ -219,5 +220,62 @@ footer {
 }
 
 .logo-tim {
+    width: 60%;
+    vertical-align: middle;
+}
+
+/*---------------------------------------------------------- 
+# artwork.html
+----------------------------------------------------------*/ 
+
+.artworkNavbar {
+    background-color: var(--alpha);
+}
+
+.bi-chevron-left {
     width: 100%;
+    font-size: 3vw;
+    color: var(--bs-dark);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bi-heart-fill {
+    width: 100%;
+    font-size: 3vw;
+    color: var(--bs-danger);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.artworkMenuIcon {
+    border-radius: 45%;
+    position: relative;
+    background-color: var(--bs-white);
+    aspect-ratio: 1/1;
+    text-align: center;
+}
+
+.artworkArt {
+    height: 33vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.artworkMoreInfo {
+    background-color: var(--bs-dark);
+}
+
+.artworkPlaceTime {
+    font-size: 80%;
+    color: var(--bs-info)
+}
+
+.artworkSectionTitle {
+    background-color: var(--bs-secondary);
 }
