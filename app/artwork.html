@@ -67,12 +67,15 @@
                 </div>
                 <div class="row my-3">
                   <div class="col">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur, justo eu vehicula imperdiet, libero enim blandit massa, in mattis purus lacus ut odio. Aliquam tempus nisl eget ex congue mattis. Curabitur tincidunt maximus lacus, vitae accumsan erat eleifend nec.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur,
+                      justo eu vehicula imperdiet, libero enim blandit massa, in mattis purus lacus ut odio. Aliquam
+                      tempus nisl eget ex congue mattis. Curabitur tincidunt maximus lacus, vitae accumsan erat eleifend
+                      nec.</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col">
-                    <button class="btn btn-outline-primary">En savoir plus</button>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#popupArtist">En savoir plus</button>
                   </div>
                 </div>
               </div>
@@ -87,6 +90,69 @@
         <div class="row">
           <div class="col">
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur.</h3>
+          </div>
+        </div>
+        <!--Accordeon-->
+        <div class="accordion" id="accordeon">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="questionUn">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                aria-expanded="true" aria-controls="collapse1">
+                Reserver votre place
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="questionUn"
+              data-bs-parent="#accordeon">
+              <div class="accordion-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <h3 class="blackText">Courriel</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <input type="email" name="mail" id="emailInput">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <h3 class="blackText mt-3">Prénom</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" name="prenom" id="nameInput">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <h3 class="blackText mt-3">Nom</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" name="nom" id="surnameInput">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <h3 class="blackText mt-3">Date de visite</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <input type="date" name="date" id="dateInput">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button class="btn btn-outline-primary my-3" type="submit">Envoyer</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -106,9 +172,25 @@
       </div>
     </div>
   </footer>
+  <!--Fenêtre Modal-->
+  <div class="modal modal-sm fade" id="popupArtist" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title blackText">Stefan Harnisch</h2>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la
+          fenêtre"></button>
+        </div>
+        <div class="modal-body">
+          <h4 class="blackText">Fulldome refers to immersive dome-based video display environments. The dome, horizontal or tilted, is filled with real-time (interactive) or pre-rendered (linear) computer animations, live capture images, or composited environments. Although the current technology emerged in the early-to-mid 1990s, fulldome environments have evolved from numerous influences, including immersive art and storytelling, with technological roots in domed architecture, planetariums, multi-projector film environments, flight simulation, and virtual reality.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="../js/script.js"></script>
+
 </html>

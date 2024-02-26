@@ -279,3 +279,7 @@ footer {
 .artworkSectionTitle {
     background-color: var(--bs-secondary);
 }
+
+.blackText {
+    color: var(--bs-dark);
+}
