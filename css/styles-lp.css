@@ -347,6 +347,14 @@ body {
     opacity: 0.75;
 }
 
+.avoirPlus .btn-next-back:hover {
+    opacity: 1;
+}
+
+.avoirPlus .btn-next-back:active {
+    opacity: 0.90;
+}
+
 .avoirPlus .btn-next-back::before {
     content: '';
     display: inline-block;
