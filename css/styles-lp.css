@@ -295,6 +295,54 @@ body {
 }
 
 /*---------------------------------------------------------- 
+# Section Voir plus 
+----------------------------------------------------------*/ 
+
+.back-avoirPlus {
+    background-color: var(--bs-secondary);
+    background-image: linear-gradient(to bottom, var(--bs-secondary), var(--bs-black) 50%, var(--bs-secondary));
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-blend-mode: hard-light;
+}
+
+.avoirPlus h1 {
+    color: var(--bs-white);
+    text-shadow: 3px 3px var(--bs-primary);
+}
+
+.avoirPlus .swiper-wrapper {
+    text-align: center;
+    color: var(--bs-white);
+}
+
+.avoirPlus .swiper {
+    width: 80%;
+    height: 100%;
+}
+
+.avoirPlus .swiper-wrapper img {
+    width: 100%;
+}
+
+.avoirPlus .btn-next-back {
+    width: 25px;
+    height: 25px;
+}
+
+.avoirPlus .btn-next-back::before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--bs-primary);
+    border-radius: 50px;
+}
+
+/*---------------------------------------------------------- 
 # Section Témoignage  
 ----------------------------------------------------------*/ 
 
@@ -305,6 +353,10 @@ body {
     background-position: center;
     background-repeat: repeat-y;
     background-blend-mode: hard-light;
+}
+
+.section-testimonials h1 {
+    text-shadow: 5px 5px var(--bs-black);
 }
 
 .section-testimonials .card-body {
