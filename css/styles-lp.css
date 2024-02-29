@@ -190,6 +190,10 @@ body {
 # Section Functionnalités  
 ----------------------------------------------------------*/ 
 
+.section-feature h1 {
+    text-shadow: 3px 3px var(--bs-primary);
+}
+
 .back-section-feature .separateur {
     height: 10vmin;
 }
@@ -466,6 +470,12 @@ body {
 /*---------------------------------------------------------- 
 # Section FAQ  
 ----------------------------------------------------------*/
+
+
+.FAQ h1 {
+    text-shadow: 3px 3px var(--bs-primary);
+}
+
 
 .back-FAQ {
     background-color: var(--bs-secondary);
