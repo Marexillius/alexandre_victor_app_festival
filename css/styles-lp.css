@@ -66,6 +66,10 @@ body {
     background-color: var(--bs-black);
 }
 
+.separateur {
+    height: 10vmin;
+}
+
 /*---------------------------------------------------------- 
 # Section Navbar 
 ----------------------------------------------------------*/ 
@@ -194,10 +198,6 @@ body {
     text-shadow: 3px 3px var(--bs-primary);
 }
 
-.back-section-feature .separateur {
-    height: 10vmin;
-}
-
 .back-section-feature {
     background-color: var(--bs-secondary);
     background-image: linear-gradient(to bottom, var(--bs-black) 10%, var(--bs-secondary));
@@ -304,7 +304,7 @@ body {
 
 .back-avoirPlus {
     background-color: var(--bs-secondary);
-    background-image: linear-gradient(to bottom, var(--bs-secondary), var(--bs-black) 50%, var(--bs-secondary));
+    background-image: linear-gradient(to bottom, var(--bs-secondary), var(--bs-black) 25%, var(--alpha));
     background-size: cover;
     background-position: center;
     background-repeat: repeat-y;
@@ -349,13 +349,22 @@ body {
     width: 25px;
     height: 25px;
     opacity: 0.75;
+    transition: linear 0.5s transform;
+}
+
+.avoirPlus .swiper-button-prev:active {
+    transform: translate(-5px) rotate(-20deg);
+}
+
+.avoirPlus .swiper-button-next:active {
+    transform: translate(5px) rotate(20deg);
 }
 
 .avoirPlus .btn-next-back:hover {
     opacity: 1;
 }
 
-.avoirPlus .btn-next-back:active {
+.avoirPlus .btn-next-back:active{
     opacity: 0.90;
 }
 
@@ -479,9 +488,9 @@ body {
 
 .back-FAQ {
     background-color: var(--bs-secondary);
-    background-image: linear-gradient(to bottom, var(--bs-dark) 15%, var(--alpha), var(--bs-dark)), url(../assets/artworks/copacabana.jpg);
+    background-image: linear-gradient(to bottom, var(--bs-dark) 15%, var(--alpha), var(--bs-dark)), url(../assets/artworks/Universarium.jpg);
     background-position: 0;
-    background-size: 50%;
+    background-size: 100%;
 }
 
 .FAQ .accordion-item, .FAQ .accordion-header {
@@ -509,7 +518,15 @@ body {
 
 @media screen and (max-width: 1200px) {
     .back-FAQ {
-        background-size: 150%;
+        background-size: 200%;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .back-FAQ {
+        background-size: 120%;
+        background-position: center;
     }
 }
 
@@ -522,7 +539,7 @@ body {
     height: auto;
 }
 
-.img-back {
+.back-infoLettre .img-back {
     background-image: url(../assets/artworks/all_heat_and_no_light.jpg);
     background-position: center;
     background-size: cover;
