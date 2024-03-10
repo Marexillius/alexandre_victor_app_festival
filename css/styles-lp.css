@@ -469,21 +469,15 @@ body {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .section-testimonials .card {
-        min-height: 750px;
-    }
-}
-
 @media screen and (max-width: 992px) {
     .section-testimonials .card {
-        min-height: 600px;
+        min-height: 560px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .section-testimonials .card {
-        min-height: 700px;
+        min-height: 650px;
     }
 }
 
