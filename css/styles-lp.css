@@ -207,7 +207,7 @@ body {
 }
 
 /*---------------------------------------------------------- 
-# Section Functionnalités  
+# Section Fonctionnalités  
 ----------------------------------------------------------*/ 
 
 .section-feature h1 {
@@ -427,7 +427,7 @@ body {
     color: var(--bs-primary);
 }
 .section-testimonials .card-body h1 {
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .section-testimonials .card {
