@@ -36,6 +36,16 @@ h1, .h1 {
     font-size: 50px; font-weight: 900; color: var(--bs-white);
 }
 
+@media screen and (max-width: 1140px) {
+    h1, .h1 {
+        
+    }
+    section .card h1, section .card .h1, .back-hero h1, .back-hero .h1 {
+        font-family: 'Heavitas';
+        font-size: 28px;
+    }
+}
+
 h2, .h2{
     font-family: 'Heavitas';
     font-size: 36px; font-weight: 700; color: var(--bs-white);
@@ -67,7 +77,7 @@ body {
 }
 
 .separateur {
-    height: 10vmin;
+    height: 5vmin;
 }
 
 /*---------------------------------------------------------- 
@@ -175,6 +185,9 @@ body {
     }
     .hero em {
         font-size: 10vmin;
+    }
+    .hero h1 {
+        font-size: 36px;
     }
 }
 
