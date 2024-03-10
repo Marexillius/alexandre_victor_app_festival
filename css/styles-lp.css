@@ -426,6 +426,9 @@ body {
 .section-testimonials p, .section-testimonials h1 {
     color: var(--bs-primary);
 }
+.section-testimonials .card-body h1 {
+    font-size: 32px;
+}
 
 .section-testimonials .card {
     background-color: var(--bs-secondary);
