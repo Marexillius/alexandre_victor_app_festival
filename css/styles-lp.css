@@ -45,6 +45,15 @@ h1, .h1 {
         font-family: 'Heavitas';
         font-size: 1.5rem;
     }
+    section.back-hero h1 em {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    section.back-hero h1 em {
+        font-size: 3rem;
+    }
 }
 
 h2, .h2{
@@ -116,15 +125,11 @@ body {
     background-position: center;
     background-repeat: repeat-y;
     background-blend-mode: luminosity;
+    color: var(--bs-white);
     min-height: 100vh;
 }
 
-.hero {
-    height: 100vh;
-    color: var(--bs-white);
-}
-
-.hero .row {
+.back-hero .row {
     height: 100%;
 }
 
@@ -135,17 +140,17 @@ body {
     box-shadow: 10px 10px var(--bs-secondary);
 }
 
-.hero h1 {
+.back-hero h1 {
     color: var(--bs-white);
 }
 
-.hero hr {
+.back-hero hr {
     width: 100%;
     border-radius: 25px;
     border: 5px solid var(--bs-white);
 }
 
-.hero h1 em {
+.back-hero h1 em {
     font-style: normal;
     font-family: 'Heavitas';
     font-size: 4.5rem;
@@ -175,25 +180,22 @@ body {
     .back-hero {
         min-height: 150vh;
     }
-    .hero {
-        min-height: 150vh;
-    }
     .info-app {
         max-height: 800px;
     }
     .app {
         min-height: 800px;
     }
-    .hero em {
+    .back-hero em {
         font-size: 10vmin;
     }
-    .hero h1 {
+    .back-hero h1 {
         font-size: 36px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .hero h1 em {
+    .back-hero h1 em {
         font-size: 3rem;
     }
 }
