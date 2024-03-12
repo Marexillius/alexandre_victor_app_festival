@@ -120,15 +120,6 @@ body {
     }
 }
 
-@media screen and (max-width: 991px) {
-    .navbar-brand {
-        height: 3em;
-        width: auto;
-        content: url(../assets/logo.png);
-        margin: 0 0.5em;
-    }
-}
-
 /*---------------------------------------------------------- 
 # Section Hero  
 ----------------------------------------------------------*/ 
