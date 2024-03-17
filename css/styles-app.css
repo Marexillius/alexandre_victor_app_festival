@@ -133,8 +133,7 @@ main,
 }
 
 .swiper-filters {
-    width: auto;
-    height: auto;
+    width: 100%;
     font-family: 'LouisGeorgeCafe_normal';
 }
 
@@ -145,6 +144,9 @@ main,
     border-radius: 10px;
     border-color: var(--bs-primary);
     white-space: nowrap;
+    object-fit: cover;
+    width: auto;
+    height: 100%;
 }
 
 /*---------------------------------------------------------- 
@@ -153,8 +155,10 @@ main,
 
 .cardCarouselStyle {
     text-decoration: none;
-    overflow-x: auto;
     min-width: 200px;
+    object-fit: cover;
+    max-width: 95vw;
+    height: 100%;
 }
 
 .card {
@@ -181,7 +185,7 @@ main,
 }
 
 #carouselCards {
-    width: 140%;
+    overflow: hidden;
     min-width: 576px;
 }
 
@@ -224,6 +228,11 @@ main,
 
 .showcaseTitle {
     text-align: center;
+}
+
+.swiper-featured-artworks {
+    width: 100%;
+    font-family: 'LouisGeorgeCafe_normal';
 }
 
 /*---------------------------------------------------------- 

@@ -1,13 +1,19 @@
-const appSwipe = document.querySelector(".swiper-filters");
-if (appSwipe) {
-    var swiper = new Swiper(".swiper-filters", {
+const filterSwipe = document.querySelector(".swiper-filters");
+const cardSwipe = document.querySelector(".swiper-featured-artworks");
+if (filterSwipe) {
+    var swiper1 = new Swiper(".swiper-filters", {
         direction: "horizontal",
         spaceBetween: 10,
         effect: "slide",
         freeMode: true,
-            watchSlidesVisibility: true,
-            observer: true,
-            observeParents: true,
+    });
+}
 
-      });
+if (cardSwipe) {
+    var swiper2 = new Swiper(".swiper-featured-artworks", {
+        direction: "horizontal",
+        spaceBetween: 10,
+        effect: "slide",
+        freeMode: true,
+    });
 }
