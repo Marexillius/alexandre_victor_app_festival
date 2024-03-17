@@ -2,27 +2,27 @@
 # Styles Généraux 
 ---------------------------------------------------------*/
 :root {
-    --alpha: rgba(00,00,00,00)
+    --alpha: rgba(00, 00, 00, 00)
 }
 
 @font-face {
     font-family: 'Heavitas';
-    src: url(../assets/fonts/heavitas/Heavitas.ttf) format('truetype');
+    src: url(../assets/fonts/Heavitas.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'LouisGeorgeCafe_normal';
-    src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe.ttf) format('truetype');
+    src: url(../assets/fonts/Louis\ George\ Cafe.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'LouisGeorgeCafe_bold';
-    src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe\ Bold.ttf) format('truetype');
+    src: url(../assets/fonts/Louis\ George\ Cafe\ Bold.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'LouisGeorgeCafe_light';
-    src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe\ Light.ttf) format('truetype');
+    src: url(../assets/fonts/Louis\ George\ Cafe\ Light.ttf) format('truetype');
 }
 
 body {
@@ -31,33 +31,51 @@ body {
     background-color: var(--bs-dark);
 }
 
-h1, .h1{ 
-    font-size: 50px; font-weight: 900; color: var(--bs-white);
+h1,
+.h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--bs-white);
 }
 
-h2, .h2{
-    font-size: 36px; font-weight: 700; color: var(--bs-white);
+h2,
+.h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--bs-white);
 }
 
-h3, .h3{ 
-    font-size: 18px; font-weight: 300; color: var(--bs-white);
+h3,
+.h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--bs-white);
 }
 
-h4, .h4{
-    font-size: 10px; font-weight: 600; color: var(--bs-white);
+h4,
+.h4 {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--bs-white);
 }
 
-h5, .h5{ 
-    font-size: 8px; font-weight: 600; color: var(--bs-white);
+h5,
+.h5 {
+    font-size: 8px;
+    font-weight: 600;
+    color: var(--bs-white);
 }
 
-h6, .h6{
-    font-size: 5px; font-weight: 300; color: var(--bs-white);
+h6,
+.h6 {
+    font-size: 5px;
+    font-weight: 300;
+    color: var(--bs-white);
 }
-  
+
 /*---------------------------------------------------------- 
 # Navbar  
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 .site-title {
     font-size: 3vw;
@@ -107,15 +125,17 @@ h6, .h6{
 
 /*---------------------------------------------------------- 
 # Recherche et filtres
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
-main {
+main,
+.main {
     background-color: var(--bs-dark);
 }
 
-.list-group-item {
-    background-color: var(--alpha);
-    border: none;
+.swiper-filters {
+    width: auto;
+    height: auto;
+    font-family: 'LouisGeorgeCafe_normal';
 }
 
 .filtre-bouton {
@@ -125,10 +145,6 @@ main {
     border-radius: 10px;
     border-color: var(--bs-primary);
     white-space: nowrap;
-}
-
-.filtres {
-    font-family: 'LouisGeorgeCafe_normal';
 }
 
 /*---------------------------------------------------------- 
@@ -212,9 +228,10 @@ main {
 
 /*---------------------------------------------------------- 
 # Footer
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
-footer {
+footer,
+.footer {
     background-color: var(--bs-secondary);
     color: var(--bs-white);
 }
@@ -226,7 +243,7 @@ footer {
 
 /*---------------------------------------------------------- 
 # artwork.html
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 .artworkNavbar {
     background-color: var(--alpha);
