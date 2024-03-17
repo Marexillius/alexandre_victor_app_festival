@@ -133,6 +133,14 @@ main,
 }
 
 .swiper-filters {
+    height: 100%;
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-wrapper {
     width: 100%;
     font-family: 'LouisGeorgeCafe_normal';
 }
@@ -158,7 +166,12 @@ main,
     min-width: 200px;
     object-fit: cover;
     max-width: 95vw;
-    height: 100%;
+    height: 80vh;
+    border-width: 1vw;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--bs-primary);
+    overflow: scroll;
 }
 
 .card {
@@ -179,7 +192,7 @@ main,
 }
 
 .carouselArtist {
-    width: 100%;
+    width: 10vw;
     -webkit-mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
     mask-image: radial-gradient(circle, black 50%, var(--alpha) 50%);
 }
@@ -196,6 +209,13 @@ main,
 
 .cardCarouselTime {
     font-size: 67%;
+}
+
+.cardContainer {
+    border-width: 1vw;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--bs-primary);
 }
 
 .cardContainer:hover {
@@ -272,6 +292,16 @@ footer,
     width: 100%;
     font-size: 3vw;
     color: var(--bs-danger);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bi-heart {
+    width: 100%;
+    font-size: 3vw;
+    color: var(--bs-secondary);
     position: absolute;
     top: 50%;
     left: 50%;
